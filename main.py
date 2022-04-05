@@ -1,9 +1,11 @@
 import pygame
 
 screen=pygame.display.set_mode([600,600])
-f=pygame.image.load("mysprites/dirt.jpg")
-fheight=f.get_height()
-screen.blit(f,[0,600-fheight])
+dirt=pygame.image.load("mysprites/dirt.jpg")
+space=pygame.image.load("mysprites/space.jpg")
+dirtheight=dirt.get_height()
+screen.blit(space,[0,0])
+screen.blit(dirt,[0,600-dirtheight])
 pygame.display.flip()
 
 
